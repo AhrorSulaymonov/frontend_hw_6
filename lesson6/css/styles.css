@@ -1,0 +1,32 @@
+.shape {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  margin: 50px;
+  animation: translationSquare 2s infinite 4s;
+  border-radius: 50%;
+}
+
+.line {
+  position: absolute;
+  top: 150px;
+  width: 250px;
+  height: 5px;
+  background-color: black;
+}
+@keyframes translationSquare {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px) rotate(720deg);
+  }
+  100% {
+    transform: translateX(200px) translateY(100px);
+  }
+}
