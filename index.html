@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- TailwindCSS: CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="flex h-[80px] bg-[#4E46B4] items-center justify-center">
+        <div
+          class="w-[1194px] h-max mx-auto flex justify-between text-white items-center"
+        >
+          <h1
+            class="text-[32px] leading-[40px] tracking-[-0.5px] text-center font-semibold"
+          >
+            Phono
+          </h1>
+          <div class="flex w-[646px] h-[48px] gap-[24px]">
+            <div class="flex gap-[12px] items-center">
+              <img
+                class="w-20px h-20px"
+                src="./assets/Mail.svg"
+                alt="mail svg"
+              />
+              <p
+                class="font-[SF Pro Display] font-semibold text-[16px] leading-6 tracking-[0px]"
+              >
+                Сообщения
+              </p>
+            </div>
+
+            <div class="flex justify-center items-center">
+              <img
+                class="w-20px h-17px"
+                src="./assets/Generic.svg"
+                alt="Generic"
+              />
+            </div>
+
+            <div class="flex gap-[12px] items-center">
+              <img
+                class="w-[32px] h-[32px]"
+                src="./assets/Generic (1).svg"
+                alt="person"
+              />
+              <p
+                class="font-[SF Pro Display] font-normal text-[18px] leading-[100%] tracking-[0%]"
+              >
+                Ваш профиль
+              </p>
+              <img
+                class=""
+                src="./assets/chevron-down.svg"
+                alt="chevron-down"
+              />
+            </div>
+            <button
+              class="w-[196px] h-[48px] rounded-[8px] bg-white font-[SF Pro Display] font-semibold text-[16px] leading-6 tracking-[0px] text-[#4E46B4] text-center align-middle"
+            >
+              Добавить объявление
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex items-center w-full max-w-[1194px] h-12 bg-gray-100 border border-gray-300 rounded-lg px-4 gap-4 mx-auto my-[40px]"
+      >
+        <svg
+          class="w-5 h-5 text-gray-400"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="text"
+          placeholder="Type e.g Slots games"
+          class="flex-1 bg-transparent outline-none text-gray-500 placeholder-gray-400"
+        />
+        <button class="p-2 bg-gray-200 rounded-lg">
+          <svg
+            class="w-5 h-5 text-gray-600"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" y1="21" x2="4" y2="14"></line>
+            <line x1="4" y1="10" x2="4" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="3"></line>
+            <line x1="20" y1="21" x2="20" y2="16"></line>
+            <line x1="20" y1="12" x2="20" y2="3"></line>
+            <line x1="2" y1="14" x2="6" y2="14"></line>
+            <line x1="10" y1="8" x2="14" y2="8"></line>
+            <line x1="18" y1="16" x2="22" y2="16"></line>
+          </svg>
+        </button>
+        <button class="px-4 py-2 bg-[#4E46B4] text-white rounded-lg">
+          Поиск
+        </button>
+      </div>
+    </header>
+
+    <div class="w-[1194px] mx-auto">
+      <!-- Categories Section -->
+      <section class="w-[1194px] h-[418px] flex-col my-[40px]">
+        <h2
+          class="font-[SF Pro Display] font-medium text-[36px] leading-[40px] tracking-[0px] text-center my-[40px]"
+        >
+          Категории
+        </h2>
+        <div class="w-[1194px] h-[328px] flex flex-wrap gap-[30px]">
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/Vector.svg" alt="Apple" />
+            </div>
+            <div>
+              <p class="text-center">Apple</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/Frame.svg" alt="HUAWEI" />
+            </div>
+            <div>
+              <p class="text-center">HUAWEI</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/Xiaomi_logo_(2021-) 1.svg" alt="Xiaomi" />
+            </div>
+            <div>
+              <p class="text-center">Xiaomi</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/pngwing 1.svg" alt="Samsung" />
+            </div>
+            <div>
+              <p class="text-center">Samsung</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img
+                src="./assets/amp-1623295457577-onboarding-uploaded-logo_1546x 1.svg"
+                alt="Blackview"
+              />
+            </div>
+            <div>
+              <p class="text-center">Blackview</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/Philips_logo 1.svg" alt="Philips" />
+            </div>
+            <div>
+              <p class="text-center">Philips</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/Xiaomi_logo_(2021-) 1.svg" alt="Xiaomi" />
+            </div>
+            <div>
+              <p class="text-center">Xiaomi</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/Vector.svg" alt="Apple" />
+            </div>
+            <div>
+              <p class="text-center">Apple</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img
+                src="./assets/amp-1623295457577-onboarding-uploaded-logo_1546x 1.svg"
+                alt="Blackview"
+              />
+            </div>
+            <div>
+              <p class="text-center">Blackview</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/pngwing 1.svg" alt="Samsung" />
+            </div>
+            <div>
+              <p class="text-center">Samsung</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/Frame.svg" alt="HUAWEI" />
+            </div>
+            <div>
+              <p class="text-center">HUAWEI</p>
+            </div>
+          </div>
+          <div
+            class="w-[174px] h-[152px] flex-col justify-between items-center"
+          >
+            <div
+              class="w-[174.01px] h-[118.68px] rounded-[22px] bg-[#F5F5F5] flex items-center justify-center"
+            >
+              <img src="./assets/plus.svg" alt="+" />
+            </div>
+            <div>
+              <p class="text-center">Смотреть все</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Listings Section -->
+      <section class="w-[1194px] h-[1592px] flex-col justify-between my-[40px]">
+        <h2
+          class="font-[SF Pro Display] font-medium text-[36px] leading-[100%] tracking-[0px] text-center"
+        >
+          Объявления
+        </h2>
+        <div class="flex flex-wrap w-[1194px] h-[1506px] gap-[30px]">
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle.svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/red-heart.svg"
+                  alt="red heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (1).svg"
+                alt="Samsung Galaxy S22 Ultra "
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Samsung Galaxy S22 Ultra
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (2).svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (3).svg"
+                alt="Apple iPhone SE"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Apple iPhone SE
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (1).svg"
+                alt="Samsung Galaxy S22 Ultra "
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Samsung Galaxy S22 Ultra
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle.svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/red-heart.svg"
+                  alt="red heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (3).svg"
+                alt="Apple iPhone SE"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Apple iPhone SE
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (2).svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (2).svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (3).svg"
+                alt="Apple iPhone SE"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Apple iPhone SE
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle.svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/red-heart.svg"
+                  alt="red heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (1).svg"
+                alt="Samsung Galaxy S22 Ultra "
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Samsung Galaxy S22 Ultra
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (3).svg"
+                alt="Apple iPhone SE"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Apple iPhone SE
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (1).svg"
+                alt="Samsung Galaxy S22 Ultra "
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Samsung Galaxy S22 Ultra
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle (2).svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/white-heart.svg"
+                  alt="white-heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+          <div
+            class="flex flex-col w-[276px] h-[354px] gap-[12px] rounded-[12px] p-[16px] pb-[24px] bg-[#F5F5F5]"
+          >
+            <div class="flex flex-col w-[244px] h-[218px] gap-[20px]">
+              <img
+                class="w-[244px] h-[174px] rounded-[6px]"
+                src="./assets/Rectangle.svg"
+                alt="Xiaomi Redmi Note 12"
+              />
+              <div class="w-[244px] h-[24px] flex justify-between items-center">
+                <h3
+                  class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px]"
+                >
+                  Xiaomi Redmi Note 12
+                </h3>
+                <img
+                  class="w-[20px] h-[20px]"
+                  src="./assets/red-heart.svg"
+                  alt="red heart"
+                />
+              </div>
+            </div>
+            <div class="w-[244px] h-[48px]">
+              <div class="w-[244px] h-[24px] flex gap-[16px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Состояние:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#4E46B4]"
+                >
+                  Новый
+                </p>
+              </div>
+              <div class="w-[244px] h-[24px] flex gap-[36px]">
+                <span
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-[#999CA0]"
+                  >Память:</span
+                >
+                <p
+                  class="font-[SF Pro Display] font-normal text-[14px] leading-[24px] tracking-[0px] align-middle text-black"
+                >
+                  64 GB
+                </p>
+              </div>
+            </div>
+            <p
+              class="font-[SF Pro Display] font-semibold text-[16px] leading-[24px] tracking-[0px] text-[#4E46B4]"
+            >
+              1 680 000 UZS
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="w-[1193px] h-[219px] border-t border-t-black pt-[50px] flex items-end"
+      >
+        <div
+          class="w-[1193px] h-[165px] flex justify-between items-start relative"
+        >
+          <h1
+            class="font-[SF Pro Display] font-semibold text-[32px] leading-[40px] tracking-[-0.5px] text-center align-middle text-[#4E46B4]"
+          >
+            Phono
+          </h1>
+          <div class="w-[755px] h-[165px] flex justify-between">
+            <div class="flex flex-col h-full justify-between gap-[12px]">
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Мобильное приложение</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Помощь</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Платные услуги</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Реклама на сайте</a
+              >
+            </div>
+
+            <div class="flex flex-col h-full justify-between gap-[12px]">
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Условия использования</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Политика конфиденциальности</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Партнеры</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Как продавать и покупать?</a
+              >
+            </div>
+
+            <div class="flex flex-col h-full justify-between gap-[12px]">
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Правила безопасности</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Карта сайта</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Карта регионов</a
+              >
+              <a
+                class="font-[SF Pro Display] font-normal text-[16px] leading-[24px]"
+                href="#"
+                >Карьера в Phono</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="w-[163.96px] h-[91.11px] flex flex-col justify-between self-end"
+          >
+            <img
+              class="w-[128px] h-[38px]"
+              src="./assets/Снимок экрана 2023-06-02 в 13.52 2.svg"
+              alt="app store"
+            />
+            <div class="flex gap-[23px] w-full h-[30px]">
+              <img
+                class="w-[30px] h-[30px]"
+                src="./assets/YouTube_full-color_icon_(2017).svg"
+                alt="you tube"
+              />
+              <img
+                class="w-[30px] h-[30px]"
+                src="./assets/VK_Compact_Logo_(2021-present).svg"
+                alt="VK"
+              />
+              <img
+                class="w-[30px] h-[30px]"
+                src="./assets/telegram-1 (1).svg"
+                alt="telegram"
+              />
+              <img
+                class="w-[30px] h-[30px]"
+                src="./assets/1200px-Odnoklassniki.svg"
+                alt="1200px-Odnoklassniki"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
